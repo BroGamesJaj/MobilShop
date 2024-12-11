@@ -3,13 +3,13 @@ package hu.petrik.mobilshop;
 public class Mobil {
     private String nev;
     private Integer mennyiseg;
-    private Integer ar;
+    private Integer darab_ar;
     private String kategoria;
 
     public Mobil(String nev, Integer mennyiseg, Integer ar, String kategoria) {
         this.nev = nev;
         this.mennyiseg = mennyiseg;
-        this.ar = ar;
+        this.darab_ar = ar;
         this.kategoria = kategoria;
     }
 
@@ -30,11 +30,11 @@ public class Mobil {
     }
 
     public Integer getAr() {
-        return ar;
+        return darab_ar;
     }
 
     public void setAr(Integer ar) {
-        this.ar = ar;
+        this.darab_ar = ar;
     }
 
     public String getKategoria() {

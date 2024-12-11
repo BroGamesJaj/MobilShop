@@ -13,22 +13,14 @@ import retrofit2.http.Path;
 public interface RetrofitApiService {
 
     // GET all users
-    @GET("acttFJ/people")
-    Call<List<Mobil>> getAllPeople();
-
-    // GET user by ID
-    @GET("acttFJ/people/{id}")
-    Call<Mobil> getPeopleById(@Path("id") int id);
+    @GET("ZuaXBD/data")
+    Call<List<Mobil>> getAllMobil();
 
     // POST (create a new user)
-    @POST("acttFJ/people")
-    Call<Mobil> createPeople(@Body Mobil people);
-
-    // PUT (update a user)
-    @PUT("acttFJ/people/{id}")
-    Call<Mobil> updatePeople(@Path("id") int id, @Body Mobil people);
+    @POST("ZuaXBD/data")
+    Call<Mobil> createMobil(@Body Mobil people);
 
     // DELETE (delete a user by ID)
-    @DELETE("acttFJ/people/{id}")
-    Call<Void> deletePeople(@Path("id") int id);
+    @DELETE("ZuaXBD/data/{id}")
+    Call<Void> deleteMobil(@Path("id") int id);
 }

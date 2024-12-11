@@ -5,16 +5,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.List;
 
-public class MobilAdapater extends BaseAdapter {
+public class MobilAdapter extends BaseAdapter {
     private List<Mobil> mobilok;
     private Context context;
 
-    public MobilAdapater(List<Mobil> mobilok, Context context) {
+    public MobilAdapter(List<Mobil> mobilok, Context context) {
         this.mobilok = mobilok;
         this.context = context;
     }
