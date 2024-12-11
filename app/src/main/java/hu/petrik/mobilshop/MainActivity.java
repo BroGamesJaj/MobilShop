@@ -37,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
         init();
+        RetrofitApiService apiService = RetrofitClient.getInstance().create(RetrofitApiService.class);
+        loadMobil(apiService);
         hozzaadButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
