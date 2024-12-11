@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".termek_add"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="25dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/nevET"
+                android:layout_margin="10dp"
+                android:hint="Termék neve"
+                android:textSize="18dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mennyET"
+                android:layout_below="@+id/nevET"
+                android:layout_margin="10dp"
+                android:hint="Termék mennyisége"
+                android:textSize="18dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/arET"
+                android:layout_below="@id/mennyET"
+                android:layout_margin="10dp"
+                android:hint="Termék darab ára"
+                android:textSize="18dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/katET"
+                android:layout_below="@+id/arET"
+                android:layout_margin="10dp"
+                android:hint="Termék kategóriája"
+                android:textSize="18dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/katET"
+                android:id="@+id/backButton"
+                android:text="Mégse"
+                android:textSize="20dp"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/katET"
+                android:layout_toEndOf="@+id/backButton"
+                android:id="@+id/addButton"
+                android:text="Hozzáadás"
+                android:textSize="20dp"
+                android:layout_margin="10dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
